@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Họ tên: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" MSSV: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/mssv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số CCCD: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cmnd"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sdt"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày sinh: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/date"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quê quán: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/country"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nơi ở hiện tại: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngành học: "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngôn ngữ lập trình: "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="changColorAfterClick" />
+
+    <EditText
+        android:id="@+id/mssv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:onClick="changColorAfterClick"/>
+
+    <EditText
+        android:id="@+id/cmnd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
+        app:layout_constraintTop_toBottomOf="@+id/mssv"
+        android:onClick="changColorAfterClick"/>
+
+    <EditText
+        android:id="@+id/sdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/cmnd"
+        android:onClick="changColorAfterClick"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+
+
+    <CheckBox
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <CheckBox
+        android:id="@+id/java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        app:layout_constraintStart_toEndOf="@+id/C"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <CheckBox
+        android:id="@+id/python"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"
+        app:layout_constraintStart_toEndOf="@+id/java"
+        app:layout_constraintTop_toTopOf="@+id/java" />
+
+    <CheckBox
+        android:id="@+id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đồng ý với các điều khoản"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/python"
+        android:onClick="changColorAfterClick"/>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agree" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/address">
+        <RadioButton
+            android:id="@+id/ktmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kĩ thuật máy tính"
+            app:layout_constraintStart_toStartOf="@+id/khmt"
+            app:layout_constraintTop_toBottomOf="@+id/khmt" />
+
+        <RadioButton
+            android:id="@+id/khmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khoa học máy tính"
+            app:layout_constraintStart_toEndOf="@+id/textView27"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+    </RadioGroup>
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/sdt"
+        android:onClick="changColorAfterClick"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="callCalendar"
+        app:layout_constraintBottom_toTopOf="@+id/country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

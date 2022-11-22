@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttonLOR">20dp</dimen>
+    <dimen name="buttonTOB">30dp</dimen>
+    <dimen name="marginS">12dp</dimen>
+    <dimen name="numberTextSize">30sp</dimen>
+</resources>
